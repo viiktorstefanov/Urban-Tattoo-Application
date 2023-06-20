@@ -1,2 +1,2 @@
-# UrbanTattooProject
+# Urban Tattoo Application
  
