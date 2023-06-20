@@ -21,8 +21,8 @@ ul li.nav-but {
     cursor: pointer;
 }
 #nav-bar-ul {
-    /* removing dots from a links */
     list-style-type: none;
+    /* removing dots from a links */
 
     display: flex;
     flex-direction: row;
