@@ -2,7 +2,6 @@
     font-family: 'Marker' ;
     src: url('./font/PermanentMarker-Regular.ttf');
 }
-
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -10,32 +9,85 @@
 }
 header {
     background-color: black;
-    height: 10vh;
+    height: 15vh;
     position: sticky;
 }
-ul li.nav-but {
+.nav-bar-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-container div {
     font-size: 27px;
-    gap: 5px;
     letter-spacing: 4px;
     font-family: 'Marker', cursive;
     cursor: pointer;
 }
-#nav-bar-ul {
-    list-style-type: none;
-    /* removing dots from a links */
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 50px;
-    color: white;
-}
-ul li:hover {
+.nav-but:hover {
     color: #f3d22d;
 }
-
-
-
-
-
+.center {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+#logo {
+    width: 210px;
+    height: 155px;
+    object-fit: fill;
+    margin-top: 45px;
+}
+/* .nav-but.logo:hover {
+    margin-top: 110px;
+    transform: scale(2);
+} */
+.left {
+    width: 20%;
+    text-align: center;
+}
+.right {
+    width: 20%;
+}
+body {
+    background: black;
+}
+main {
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+}
+footer {
+    text-align: center;
+    color: white;
+    margin-right: 40px;
+}
+.right .nav-but button {
+padding: 6px 22px;
+font-size: 18px;
+font-family:'Lato',sans-serif;
+background-color: black;
+color: white;
+border-radius: 5px;
+border: white 2px solid;
+}
+.right .nav-but button:hover {
+color: #f3d22d;
+border-color: #f3d22d;
+}
+.logout {
+    /* default shoud be none */
+    display: block;
+}
+.right .nav-but {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding-right: 20px;
+}
