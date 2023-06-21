@@ -7,8 +7,10 @@
     margin: 0px;
     padding: 0px;
 }
+body {
+    background: black;
+}
 header {
-    background-color: black;
     height: 15vh;
     position: sticky;
     top: 0;
@@ -16,60 +18,63 @@ header {
 .nav-bar-container {
     width: 100%;
     height: 100%;
+    background-color: black;
     display: flex;
     flex-direction: row;
     color: white;
     justify-content: center;
     align-items: center;
 }
-.nav-bar-container div {
+.nav-main {
     font-size: 27px;
     letter-spacing: 4px;
     font-family: 'Marker', cursive;
     cursor: pointer;
-}
-.nav:hover {
-    color: #f3d22d;
-}
-.center {
     display: flex;
     flex-direction: row;
-    gap: 120px;
-    width: 60%;
+    gap: 40px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.nav.left-home:hover ,.nav.left-gallery:hover ,.nav.left-booking:hover ,.nav.left-contact:hover{
+    color: #f3d22d;
+}
+.nav.left {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.nav.right {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
 #logo {
     width: 210px;
     height: 155px;
     object-fit: fill;
 }
-/* .nav.logo:hover {
-    margin-top: 110px;
-    transform: scale(2);
-} */
-.left {
-    width: 20%;
-    text-align: center;
-}
-.right {
-    width: 20%;
-}
-body {
-    background: black;
+.nav.logo {
+    position: relative;
+    top: 20px;
+    left: 0;
 }
 main {
     color: white;
     text-align: center;
-    margin-top: 70px;
 }
-footer {
-    text-align: center;
-    color: white;
-    margin-right: 40px;
-    margin-bottom: 20px;
+.nav-end {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
-.right .nav button {
+.nav-end button {
 padding: 2px 18px;
 font-size: 15px;
 font-family:'Roboto',sans-serif;
@@ -78,19 +83,20 @@ color: white;
 border-radius: 5px;
 border: white 2px solid;
 }
-.right .nav button:hover {
+.nav-end button:hover {
 color: #f3d22d;
 border-color: #f3d22d;
+}
+footer {
+    text-align: center;
+    color: white;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
 .logout {
     /* default shoud be none */
     display: block;
-}
-.right .nav {
-    display: flex;
-    justify-content: right;
-    gap: 20px;
-    padding-right: 20px;
 }
 a {
     text-decoration: none;
@@ -116,10 +122,4 @@ font-size: 35px;
 }
 .footer-links i:hover {
     color: #f3d22d;
-}
-.nav.logo {
-    position: relative;
-    top: 100px;
-    left: 9%;
-    transform: translate(-50%, -50%);
 }
