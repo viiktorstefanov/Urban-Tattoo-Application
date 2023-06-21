@@ -10,12 +10,16 @@
 body {
     background: black;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 header {
     height: 15vh;
     position: sticky;
     top: 0;
 }
-.nav-bar-container {
+.nav-bar{
     width: 100%;
     height: 100%;
     background-color: black;
@@ -25,7 +29,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-.nav-main {
+.nav-bar__main {
     font-size: 27px;
     letter-spacing: 4px;
     font-family: 'Marker', cursive;
@@ -37,34 +41,34 @@ header {
     align-items: center;
     text-align: center;
 }
-.nav.left-home:hover ,.nav.left-gallery:hover ,.nav.left-booking:hover ,.nav.left-contact:hover{
+.nav-bar__main--left--home:hover ,.nav-bar__main--left--gallery:hover ,.nav-bar__main--right--booking:hover ,.nav-bar__main--right--contact:hover{
     color: #f3d22d;
 }
-.nav.left {
+.nav-bar__main--left {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
-.nav.right {
+.nav-bar__main--right {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
-#logo {
+.nav-bar__main--middle--logo--img {
     width: 210px;
     height: 155px;
     object-fit: fill;
 }
-.nav.logo {
+.nav-bar__main--middle--logo {
     position: relative;
     top: 20px;
-    left: 0;
+    left: 6px;
 }
 main {
     color: white;
     text-align: center;
 }
-.nav-end {
+.nav-bar__end {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -74,7 +78,7 @@ main {
     top: 10px;
     right: 10px;
 }
-.nav-end button {
+.nav-bar__end button {
 padding: 2px 18px;
 font-size: 15px;
 font-family:'Roboto',sans-serif;
@@ -83,7 +87,7 @@ color: white;
 border-radius: 5px;
 border: white 2px solid;
 }
-.nav-end button:hover {
+.nav-bar__end button:hover {
 color: #f3d22d;
 border-color: #f3d22d;
 }
@@ -94,15 +98,21 @@ footer {
     margin-bottom: 20px;
     padding-top: 20px;
 }
-.logout {
+.nav-bar__main--logout {
     /* default shoud be none */
     display: block;
 }
-a {
-    text-decoration: none;
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     color: white;
+    margin-bottom: 20px;
 }
-a:hover {
+.links__instagram--icon, .links__facebook--icon, .links__google--icon {
+    font-size: 35px;
+}
+.links__instagram--icon:hover, .links__facebook--icon:hover, .links__google--icon:hover {
     color: #f3d22d;
 }
 .copyright {
@@ -110,16 +120,6 @@ a:hover {
     display: block;
     font-size: 15px;
 }
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    color: white;
-    margin-bottom: 20px;
-}
-.footer-links i {
-font-size: 35px;
-}
-.footer-links i:hover {
+.copyright__author:hover {
     color: #f3d22d;
 }
