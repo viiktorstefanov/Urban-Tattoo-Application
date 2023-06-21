@@ -28,13 +28,13 @@ header {
     font-family: 'Marker', cursive;
     cursor: pointer;
 }
-.nav-but:hover {
+.nav:hover {
     color: #f3d22d;
 }
 .center {
     display: flex;
     flex-direction: row;
-    gap: 90px;
+    gap: 120px;
     width: 60%;
     justify-content: center;
     align-items: center;
@@ -43,9 +43,8 @@ header {
     width: 210px;
     height: 155px;
     object-fit: fill;
-    margin-top: 45px;
 }
-/* .nav-but.logo:hover {
+/* .nav.logo:hover {
     margin-top: 110px;
     transform: scale(2);
 } */
@@ -70,7 +69,7 @@ footer {
     margin-right: 40px;
     margin-bottom: 20px;
 }
-.right .nav-but button {
+.right .nav button {
 padding: 2px 18px;
 font-size: 15px;
 font-family:'Roboto',sans-serif;
@@ -79,7 +78,7 @@ color: white;
 border-radius: 5px;
 border: white 2px solid;
 }
-.right .nav-but button:hover {
+.right .nav button:hover {
 color: #f3d22d;
 border-color: #f3d22d;
 }
@@ -87,7 +86,7 @@ border-color: #f3d22d;
     /* default shoud be none */
     display: block;
 }
-.right .nav-but {
+.right .nav {
     display: flex;
     justify-content: right;
     gap: 20px;
@@ -117,4 +116,10 @@ font-size: 35px;
 }
 .footer-links i:hover {
     color: #f3d22d;
+}
+.nav.logo {
+    position: relative;
+    top: 100px;
+    left: 9%;
+    transform: translate(-50%, -50%);
 }
