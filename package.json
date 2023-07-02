@@ -1,0 +1,23 @@
+{
+  "name": "urbantattooapplication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktor0110/Urban-Tattoo-Application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viktor0110/Urban-Tattoo-Application/issues"
+  },
+  "homepage": "https://github.com/viktor0110/Urban-Tattoo-Application#readme",
+  "dependencies": {
+    "lit-html": "^2.7.4"
+  }
+}

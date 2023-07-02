@@ -1,8 +1,12 @@
+import { html, render } from '.../node_modules\lit-html\lit-html.js';
+
 const main = document.getElementById('main');
 const mainContent = document.getElementById('content');
 
 export function galleryPage() {
     mainContent.style.display = 'none';
+
+    
 
     let galleryContent = document.createElement('div');
     galleryContent.classList.add('main__gallery');
